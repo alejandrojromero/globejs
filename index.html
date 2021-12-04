@@ -1,0 +1,103 @@
+<html>
+<head>Globe
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    .box {
+        display: flex;
+        align-items: stretch;
+    }
+</style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+
+<body>
+
+<div class="flex-grid">
+    <div class="col" id="globe">
+        <canvas width="700" height="500">
+
+        </canvas>
+    </div>
+    <div class="col">The globe shows 252 extreme weather events and trends across the globe for which scientists have carried out attribution studies. The different symbols show the type of extreme weather; for example, a heatwave, flood or drought.
+        <div class="row">Of these events, <div style="color: orangered; display: inline"> 91% </div>occurred within the past decade.
+        </div>
+<!--        <div class="row"> Select a date range below and toggle the weather event types to view the number of each event type.-->
+<!--        </div>-->
+
+        <div class="row" style="padding-top: 30px">
+<!--            <div style="padding-right: 5px; padding-bottom: 10px"> Time Period</div>-->
+        <button id="AllDates" class="eventDateButtonFocus"> All </button>
+        <button id="pre2011" class="eventDateButton"> Pre- 2011 </button>
+        <button id="post2011" class="eventDateButton"> 2011 - 2020 </button>
+        </div>
+        <div style="padding-top: 30px"></div>
+        Event Type
+        <div class="flex-grid">
+        <div class="col">
+            <button id="firesButton" class="row small-font eventTypeButton"> 🔥 Wildfire
+            </button>
+            <button id="stormButton" class="row small-font eventTypeButton"> 🌩 Storm
+            </button>
+            <button id="droughtButton" class="row small-font eventTypeButton"> 💧️ Drought
+            </button>
+
+
+        </div>
+        <div class="col">
+            <button id="heatButton" class="row small-font eventTypeButton"> 🌡 Heat
+            </button>
+            <button id="sunButton" class="row small-font eventTypeButton"> ☀️ Sun
+            </button>
+            <button id="allEvents" class="row small-font eventTypeButtonFocus"> 🌍️ All
+            </button>
+        </div>
+        </div>
+
+        Number of events <div id = "numEvents" style="color:orangered; font-size: 40px">   252 </div>
+
+    </div>
+
+</div>
+
+<div class="box">
+    <div >
+
+    </div>
+    <div></div>
+    <div></div>
+
+</div>
+
+
+<!--<script type="module">-->
+<!--    import * as THREE from './js/three.js';-->
+
+<!--    import {GLTFLoader} from './js/GLTFLoader.js';-->
+
+
+<!--    window.THREE = THREE;-->
+<!--    window.GLTFLoader = GLTFLoader;-->
+
+<!--</script>-->
+
+
+<script src="./js/three.js"></script>
+<script src="./js/main.js"></script>
+
+<script src="./js/GLTFLoader.js"></script>
+
+
+<script src="./js/orbit-controls.js">
+
+</script>
+
+<script type="module" src="./js/globe.js">
+
+</script>
+</body>
+</html>

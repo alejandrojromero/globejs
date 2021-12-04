@@ -1,0 +1,94 @@
+.flex-grid {
+    display: flex;
+}
+.flex-grid .col {
+    flex: 1;
+}
+.flex-grid .row {
+    flex: 1;
+    padding-top: 10px;
+}
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-thirds .col {
+    width: 32%;
+}
+
+
+.eventDateButton {
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    border: 1px solid lightgray;
+    color: lightgray;
+    padding: 5px;
+    width: 20%;
+    font-weight: bold;
+
+}
+
+.eventDateButton:hover{
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.eventDateButtonFocus{
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    padding: 5px;
+    width: 20%;
+    font-weight: bold;
+}
+
+.eventTypeButton{
+    text-align: left;
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    border: 0px solid orangered;
+    color: lightgray;
+    padding: 10px;
+    width: 52%;
+    font-weight: bold;
+}
+
+
+.eventTypeButton:hover{
+    color: orangered;
+    padding: 10px;
+}
+
+.eventTypeButtonFocus{
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    border: 1px solid orangered;
+    color: orangered;
+    padding: 10px;
+    width: 52%;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: lightgray;
+}
+.flex-grid {
+    margin: 0 0 20px 0;
+}
+.col {
+    background: #2E2E2E;
+    padding: 20px;
+}
+
+.small-font{
+    font-size: 14px;
+
+}
